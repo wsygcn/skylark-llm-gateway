@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: skylark-llm-gateway
+  cloud:
+    gateway:
+      # 路由配置占位，后续在这里添加 LLM 上游路由
+      routes: []
+
+# 暴露健康检查与网关相关端点，便于调试
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO
