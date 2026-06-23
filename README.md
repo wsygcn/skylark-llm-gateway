@@ -1,2 +1,2 @@
-# -Users-luoxue-dev-idea-workspace-skylark-llm-gateway
+# skylark-llm-gateway
 llm gateway
